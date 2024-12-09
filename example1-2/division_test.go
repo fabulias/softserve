@@ -5,16 +5,16 @@ import (
 )
 
 type DivisionTestDefinition struct {
-	name       string
-	a, b       int
-	expected   int
-	shouldFail bool
+	name     string
+	a, b     int
+	expected int
+	//shouldFail bool
 }
 
 var divisionTest []DivisionTestDefinition = []DivisionTestDefinition{
-	{"1/1", 1, 1, 1, true},
-	{"2/3", 2, 3, 0, true},
-	{"6/2", 6, 2, 3, true},
+	{"1/1", 1, 1, 1}, //false},
+	{"2/3", 2, 3, 0}, //false},
+	{"6/2", 6, 2, 3}, //false},
 }
 
 func TestAdd_GoodExample(t *testing.T) {
